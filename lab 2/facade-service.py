@@ -20,3 +20,4 @@ def message_handler():
     logging_response = httpx.get(LOGGING_SERVICE).text.strip('"')
     message_response = httpx.get(MESSAGES_SERVICE).text.strip('"')
     return message_response + ': ' + logging_response
+

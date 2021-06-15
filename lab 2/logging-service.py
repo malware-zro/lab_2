@@ -20,3 +20,4 @@ def hash_table(message: Message):
 @app.get('/lab2')
 def return_messages():
     return '[{}]'.format(', '.join(hash_table.values()))
+
